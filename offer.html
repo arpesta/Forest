@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjoa Metsätila</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #2e7d32;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tarjoa Metsätila</h1>
+    <p>Olemme kiinnostuneita ostamaan metsätiloja perikunnilta ja kuolinpesiltä. Jätä tiedot, niin teemme tarjouksen tai autamme perikunnan purkamisen selvittämisessä.</p>
+    <form>
+        <label for="name">Nimi</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Puhelinnumero</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Sähköpostiosoite</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tilanumero">Tilatunnus</label>
+        <input type="text" id="tilanumero" name="tilanumero" required>
+
+        <button type="submit">Lähetä</button>
+    </form>
+</div>
+
+</body>
+</html>
