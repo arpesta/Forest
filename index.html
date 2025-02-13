@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metsäyhtymä XX</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        .hero-content p {
+            font-size: 20px;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .three-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 30%;
+            padding: 20px;
+            background: #f4f4f4;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #2e7d32;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #d0f0c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <video autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <h1>Metsäyhtymä XX</h1>
+        <p>Vastuullista metsäsijoittamista ja pitkäjänteistä metsänhoitoa</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Miksi valita Metsäyhtymä XX?</h2>
+    <div class="three-columns">
+        <div class="column">
+            <h3>Pitkäjänteinen sijoitus</h3>
+            <p>Sijoitamme metsään pitkäaikaisella näkemyksellä, joka tuottaa tasaisen arvonkehityksen ja varman kasvun.</p>
+        </div>
+        <div class="column">
+            <h3>Kestävä metsätalous</h3>
+            <p>Toimimme kestävän kehityksen periaatteiden mukaisesti ja vaalimme metsien monimuotoisuutta.</p>
+        </div>
+        <div class="column">
+            <h3>Asiantunteva tiimi</h3>
+            <p>Tiimillämme on vankka kokemus metsätaloudesta ja metsäsijoittamisesta, mikä takaa asiantuntevan palvelun.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Tarjoa Metsätila</h2>
+    <p>Oletko kiinnostunut myymään metsätilan? Ota meihin yhteyttä ja teemme sinulle tarjouksen.</p>
+    <p><a href="offer.html" style="color: #2e7d32; font-weight: bold;">Täytä lomake</a></p>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 Metsäyhtymä XX | <a href="yritys.html">Yrityksestä</a> | <a href="offer.html">Tarjoa Metsätila</a></p>
+</div>
+
+</body>
+</html>
